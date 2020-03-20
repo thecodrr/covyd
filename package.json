@@ -1,0 +1,36 @@
+{
+  "name": "cassy",
+  "version": "1.0.0",
+  "description": "A cool utility to assist you in taking precautions for COVID-19 by occasional health reminders. Can also tell a joke or two.",
+  "main": "index.js",
+  "bin": {
+    "cassy": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecodrr/corona-assist.git"
+  },
+  "keywords": [
+    "coronavirus",
+    "covid-19",
+    "health",
+    "cli",
+    "bash",
+    "terminal",
+    "linux",
+    "osx",
+    "windows"
+  ],
+  "author": "thecodrr <thecodrr@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thecodrr/corona-assist/issues"
+  },
+  "homepage": "https://github.com/thecodrr/corona-assist#readme",
+  "dependencies": {
+    "configstore": "^5.0.1"
+  }
+}
