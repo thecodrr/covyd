@@ -18,6 +18,9 @@ async function main() {
         return init();
       case "stat":
         return stat();
+      case "refresh":
+        await loadMessages();
+        break;
       case "uninstall":
         return uninstallCovyd();
     }
