@@ -1,10 +1,10 @@
 const { openrc } = require("./utils");
 
 const GREETING_FUNCTION = `function fish_greeting
-    cassy
+    covyd
 end`;
 const PROMPT_FUNCTION = `function name --on-event fish_prompt
-    cassy
+    covyd
 end`;
 const RC_PATH = ".config/fish/config.fish";
 
@@ -14,7 +14,7 @@ function setup(frequency) {
     if (frequency === -1) command = GREETING_FUNCTION;
     else command = PROMPT_FUNCTION;
 
-    if (data.indexOf("cassy") > -1) return;
+    if (data.indexOf("covyd") > -1) return;
     return `${command}\n${data}`;
   });
 }

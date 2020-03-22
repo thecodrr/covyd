@@ -5,7 +5,7 @@ const ConfigStore = require("configstore");
 const { printThanks, printError } = require("./helpers");
 const rgb = require("./rgb");
 
-const config = new ConfigStore("cassy", { count: 0 });
+const config = new ConfigStore("covyd", { count: 0 });
 
 function main() {
   const args = process.argv.slice(2);
@@ -19,7 +19,7 @@ function main() {
       case "stat":
         return stat();
       case "uninstall":
-        return uninstallCassy();
+        return uninstallCovyd();
     }
   }
 }
@@ -70,13 +70,13 @@ function init() {
   });
 }
 
-function uninstallCassy() {
+function uninstallCovyd() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
   rl.question(
-    rgb.warnBold("🗑️  Are you sure you want to uninstall cassy? (Y/n): "),
+    rgb.warnBold("🗑️  Are you sure you want to uninstall covyd? (Y/n): "),
     async function(answer) {
       if (answer === "Y") await uninstall();
       else printThanks();

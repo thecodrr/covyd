@@ -1,10 +1,10 @@
 {
-  "name": "cassy",
+  "name": "covyd",
   "version": "1.0.0",
-  "description": "Cassy helps you prepare for COVID-19 (Coronavirus) by providing health reminders, tips & other useful guidelines right in your terminal.",
+  "description": "Covyd helps you prepare for COVID-19 (Coronavirus) by providing health reminders, tips & other useful guidelines right in your terminal.",
   "main": "index.js",
   "bin": {
-    "cassy": "./src/index.js"
+    "covyd": "./src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

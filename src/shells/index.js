@@ -4,7 +4,7 @@ const fish = require("./fish.js");
 const ConfigStore = require("configstore");
 const { printError, printAssistError } = require("../helpers");
 
-const config = new ConfigStore("cassy", {
+const config = new ConfigStore("covyd", {
   frequency: -1,
   count: 0,
   shells: []
@@ -40,7 +40,7 @@ function setup(shellName, frequency) {
 
 async function uninstall() {
   let shells = config.get("shells");
-  if (!shells.length) printError("You have not installed cassy yet.");
+  if (!shells.length) printError("You have not installed covyd yet.");
   //shells = shells.map(sh => SHELLS.find(s => sh === s.name));
   await Promise.all(
     shells.map(async sh => {

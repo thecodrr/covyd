@@ -3,17 +3,17 @@ const { openrc } = require("./utils");
 function setup(frequency) {
   return openrc(function(data) {
     let command = "";
-    if (frequency === -1) command = "cassy";
-    else command = "PROMPT_COMMAND=cassy";
+    if (frequency === -1) command = "covyd";
+    else command = "PROMPT_COMMAND=covyd";
 
-    if (data.indexOf("cassy") > -1) return;
+    if (data.indexOf("covyd") > -1) return;
     return `${command}\n${data}`;
   });
 }
 
 function uninstall() {
   return openrc(".bashrc", function(data) {
-    return data.replace("cassy", "").replace("PROMPT_COMMAND=cassy", "");
+    return data.replace("covyd", "").replace("PROMPT_COMMAND=covyd", "");
   });
 }
 

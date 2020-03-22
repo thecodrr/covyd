@@ -7,37 +7,37 @@
 
 ## Features:
 
-**🌐 100% Offline:** `cassy` is 100% offline. Making it blazing fast.
+**🌐 100% Offline:** `covyd` is 100% offline. Making it blazing fast.
 
-**🕺 Non-intrusive:** `cassy` will not interrupt your workflow. Your work is most important (after your health).
+**🕺 Non-intrusive:** `covyd` will not interrupt your workflow. Your work is most important (after your health).
 
-**🧑‍🤝‍🧑 Community Lead:** `cassy` cannot be without your contribution and help. You are what makes `cassy` great. So please share your stories, tips, jokes etc. with us so we can include them in our catalog.
+**🧑‍🤝‍🧑 Community Lead:** `covyd` cannot be without your contribution and help. You are what makes `covyd` great. So please share your stories, tips, jokes etc. with us so we can include them in our catalog.
 
 ## Installation:
 
-It is recommended that you install `cassy` globally.
+It is recommended that you install `covyd` globally.
 
 Use `npm`:
 
 ```sh
-npm install -g cassy
+npm install -g covyd
 ```
 
 Or `yarn`:
 
 ```sh
-yarn global add cassy
+yarn global add covyd
 ```
 
 After installation simply run:
 
 ```sh
-cassy init
+covyd init
 ```
 
 You will be guided through the steps and will be up and running in no time.
 
-> To `uninstall` simply run `cassy uninstall`
+> To `uninstall` simply run `covyd uninstall`
 
 ## Plans:
 
@@ -49,15 +49,15 @@ You will be guided through the steps and will be up and running in no time.
 
 ## Contributing:
 
-`cassy` cannot grow and help without the contribution from the community. Here are some of the ways you can help out.
+`covyd` cannot grow and help without the contribution from the community. Here are some of the ways you can help out.
 
 ### Messages:
 
-`cassy` includes a list of messages. Currently it's pretty basic (and short). It is requested from the community that they contribute their tips, stories, jokes and other positive stuff. Simply open a PR with your message and it will be added.
+`covyd` includes a list of messages. Currently it's pretty basic (and short). It is requested from the community that they contribute their tips, stories, jokes and other positive stuff. Simply open a PR with your message and it will be added.
 
 ### Terminal/Shell Support:
 
-**Currently `cassy` only supports:**
+**Currently `covyd` only supports:**
 
 - `bash`
 - `zsh`
@@ -77,11 +77,11 @@ You can give monetary support [over here](https://ko-fi.com/thecodrr).
 
 **1. How does it work?**
 
-The concept is very simple. `cassy` has a list of messages. It randomly chooses a message and prints it in the terminal either on startup or after every N commands (configurable).
+The concept is very simple. `covyd` has a list of messages. It randomly chooses a message and prints it in the terminal either on startup or after every N commands (configurable).
 
 **2. What are you expecting from this?**
 
-The purpose is simple. To help developers and people maintain a healthy routine and to also give them something fun to work with. `cassy` can grow to become something amazing. And I am hoping the community will see that.
+The purpose is simple. To help developers and people maintain a healthy routine and to also give them something fun to work with. `covyd` can grow to become something amazing. And I am hoping the community will see that.
 
 **3. How did it come to be?**
 
@@ -89,11 +89,11 @@ I wanted to be reminded on and off about health tips regarding Coronavirus. Sinc
 
 **4. Will it have an impact on the performance?**
 
-`cassy` is really lightweight. You shouldn't feel a difference after installing it.
+`covyd` is really lightweight. You shouldn't feel a difference after installing it.
 
 **5. Does it support X shell?**
 
-Please open an issue with the name of your shell and how to configure it to serve the purpose `cassy` aims to serve. It is my mission to support all the terminals out there so all help is welcome.
+Please open an issue with the name of your shell and how to configure it to serve the purpose `covyd` aims to serve. It is my mission to support all the terminals out there so all help is welcome.
 
 ## LICENSE
 
