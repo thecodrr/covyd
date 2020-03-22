@@ -43,7 +43,8 @@ function getRandomMessage() {
     message += rgb.it(
       "\nYou can contribute your own personal messages, tips, jokes or stories by going to https://github.com/thecodrr/covyd"
     );
-  return message || "";
+  if (!message) return "";
+  return "\n" + message;
 }
 
 module.exports = { loadMessages, getRandomMessage };
