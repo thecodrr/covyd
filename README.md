@@ -11,11 +11,11 @@
 
 ## Features:
 
+**🕺 Automated Reminders:** `covyd` automatically reminds you to take the advised precautions. It merges in with your workflow so you won't even notice it until it pings you.
+
+**🕺 Coronavirus Cases Tracking (WIP):** `covyd` will include a coronavirus case tracker which you can configure to your country. It will occasionally report cases, recoveries etc.
+
 **🌐 100% Offline:** `covyd` is 100% offline. Making it blazing fast.
-
-**🕺 Non-intrusive:** `covyd` will not interrupt your workflow. Your work is most important (after your health).
-
-**🧑‍🤝‍🧑 Community Lead:** `covyd` cannot be without your contribution and help. You are what makes `covyd` great. So please share your stories, tips, jokes etc. with us so we can include them in our catalog.
 
 ## Installation:
 
