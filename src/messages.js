@@ -1,13 +1,40 @@
 const rgb = require("./rgb");
+const ConfigStore = require("configstore");
+const fetch = require("node-fetch");
+const config = new ConfigStore("covyd", {
+  messages: [],
+  lastSynced: undefined
+});
 
-const messages = [
-  "👏 Don't forget to regularly wash your hands.",
-  "🏠 Stay home. Stay safe.",
-  "🦺 Keep yourself socially distant. Help straighten the curve.",
-  "🥶 Don't touch your face.",
-  "😷 Wearing a mask helps a lot.",
-  "🤧 Always sneeze in your elbow."
-];
+const messages = [];
+const URL =
+  "https://raw.githubusercontent.com/thecodrr/covyd/master/data/messages.txt";
+
+async function syncMessages() {
+  if (!shouldSync()) return;
+  const result = await fetch(URL);
+  if (result.ok) {
+    const text = await result.text();
+    messages.push(...text.split("\n"));
+    config.set("lastSynced", Date.now());
+    config.set("messages", messages);
+  }
+}
+
+function shouldSync() {
+  const lastSynced = config.get("lastSynced");
+  if (lastSynced) {
+    var oneDayMore = new Date(lastSynced);
+    oneDayMore = tomorrow.setDate(tomorrow.getDate() + 1);
+    return oneDayMore > Date.now();
+  }
+  return true;
+}
+
+async function loadMessages() {
+  messages.push(...config.get("messages"));
+  await syncMessages();
+}
 
 function getRandomMessage() {
   let message = messages[Math.floor(Math.random() * messages.length)];
@@ -18,4 +45,4 @@ function getRandomMessage() {
   return message;
 }
 
-module.exports = getRandomMessage;
+module.exports = { loadMessages, getRandomMessage };

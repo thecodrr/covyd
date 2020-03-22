@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/thecodrr/corona-assist#readme",
   "dependencies": {
-    "configstore": "^5.0.1"
+    "configstore": "^5.0.1",
+    "node-fetch": "^2.6.0"
   }
 }

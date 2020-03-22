@@ -1,4 +1,4 @@
-const getMessage = require("./messages");
+const { getRandomMessage, loadMessages } = require("./messages");
 const readline = require("readline");
 const { setup, uninstall } = require("./shells");
 const ConfigStore = require("configstore");
@@ -7,10 +7,10 @@ const rgb = require("./rgb");
 
 const config = new ConfigStore("covyd", { count: 0 });
 
-function main() {
+async function main() {
   const args = process.argv.slice(2);
   if (!args.length) {
-    printMessage();
+    await printMessage();
   } else {
     const arg = args[0];
     switch (arg) {
@@ -24,12 +24,13 @@ function main() {
   }
 }
 
-function printMessage() {
+async function printMessage() {
   const frequency = config.get("frequency");
   let count = config.get("count");
   config.set("count", ++count);
   if (frequency === -1 || count % frequency === 0) {
-    console.log(getMessage());
+    await loadMessages();
+    console.log(getRandomMessage());
   }
 }
 
@@ -85,4 +86,6 @@ function uninstallCovyd() {
   );
 }
 
-main();
+(async function() {
+  await main();
+})();
