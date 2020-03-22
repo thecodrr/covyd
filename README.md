@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Coronavirus Assistant</h1>
-<h3 align="center">Helping out through your terminal.</h3>
+<h3 align="center">Helping out through your terminal</h3>
 
 ## Features:
 
