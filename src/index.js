@@ -7,26 +7,6 @@ const rgb = require("./rgb");
 
 const config = new ConfigStore("covyd", { count: 0 });
 
-async function main() {
-  const args = process.argv.slice(2);
-  if (!args.length) {
-    await printMessage();
-  } else {
-    const arg = args[0];
-    switch (arg) {
-      case "init":
-        return init();
-      case "stat":
-        return stat();
-      case "refresh":
-        await loadMessages();
-        break;
-      case "uninstall":
-        return uninstallCovyd();
-    }
-  }
-}
-
 async function printMessage() {
   const frequency = config.get("frequency");
   let count = config.get("count");
@@ -90,6 +70,8 @@ function uninstallCovyd() {
   );
 }
 
-(async function() {
-  await main();
-})();
+module.exports = {
+  init,
+  uninstallCovyd,
+  stat
+};

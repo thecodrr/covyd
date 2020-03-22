@@ -1,0 +1,6 @@
+.github/
+assets/
+data/
+node_modules/
+yarn.lock
+.gitignore

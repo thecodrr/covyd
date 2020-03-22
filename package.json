@@ -4,7 +4,7 @@
   "description": "Covyd helps you prepare for COVID-19 (Coronavirus) by providing health reminders, tips & other useful guidelines right in your terminal.",
   "main": "index.js",
   "bin": {
-    "covyd": "./src/index.js"
+    "covyd": "./bin/covyd.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
