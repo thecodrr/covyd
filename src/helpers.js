@@ -36,8 +36,13 @@ function printAssistError(err) {
   );
 }
 
+function printWarning(message) {
+  console.log(rgb.warnBold(message));
+}
+
 module.exports = {
   printThanks,
   printError,
-  printAssistError
+  printAssistError,
+  printWarning
 };

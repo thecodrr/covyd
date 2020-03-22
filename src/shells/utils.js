@@ -1,10 +1,12 @@
 const fs = require("fs");
-const { printError } = require("../helpers");
+const { printError, printWarning } = require("../helpers");
 
 function openrc(rcFilename, cb) {
   const rcPath = `${process.env.HOME}/${rcFilename}`;
-  if (!fs.existsSync(rcPath))
-    printError(`Couldn't find ${rcFilename} file at: ${rcPath}`);
+  if (!fs.existsSync(rcPath)) {
+    printWarning(`Couldn't find ${rcFilename} file at: ${rcPath}. Creating...`);
+    fs.writeFileSync(rcPath, "");
+  }
 
   return new Promise(function(resolve) {
     fs.readFile(rcPath, (err, data) => {

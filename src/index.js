@@ -46,7 +46,7 @@ function init() {
   });
 
   rl.question(
-    rgb.infoBold("🖥️  What shell do you use (e.g. bash, zsh, etc.)? "),
+    rgb.infoBold("🖥️  What shell do you use (e.g. bash, zsh etc.)? "),
     function(shell) {
       console.log();
       rl.question(
