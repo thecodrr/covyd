@@ -90,13 +90,13 @@ $ covyd stat
 
 `covyd` cannot grow and help without the contribution from the community. Here are some of the ways you can help out.
 
-### Messages:
+### Add more messages:
 
-`covyd` includes a list of messages. Currently it's pretty basic (and short). It is requested from the community that they contribute their tips, stories, jokes and other positive stuff. Simply open a PR with your message and it will be added.
+`covyd` includes [a list of messages](https://github.com/thecodrr/covyd/blob/master/data/messages.txt). Currently it's pretty basic (and short). You can contribute your own tips, stories etc. Simply open a PR with your message and it will be added.
 
-### Terminal/Shell Support:
+### Add support for your terminal/shell:
 
-**Currently `covyd` only supports:**
+**Currently `covyd` supports:**
 
 - `bash`
 - `zsh`
@@ -104,11 +104,11 @@ $ covyd stat
 
 Help is requested from the community to add support for other terminal emulators and shells. Anyone with such experience is welcome to contribute. You do not have to contribute code, just leave a short guide on how to implement the functionality and I will handle the rest. PRs are of course welcome
 
-### Bug Fixes:
+### Fix a bug:
 
 Any and all bug fixes are welcome. You can open a PR or an issue.
 
-### Financial:
+### Support by donating:
 
 You can give monetary support [over here](https://ko-fi.com/thecodrr).
 
