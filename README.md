@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/logo.png" width="250">
+    <img src="./assets/logo.png" width="300">
 </p>
 
 <h1 align="center">Coronavirus Assistant</h1>
