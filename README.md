@@ -45,6 +45,8 @@ You will be guided through the steps and will be up and running in no time.
 
 ## Usage:
 
+_Normally you wouldn't need to manually interact with `covyd` (aside from the first init) but if you wanted to here's the list of command it supports._
+
 ### `init`:
 
 Initializes `covyd` and adds necessary configuration to your shell's `.*rc` files;
