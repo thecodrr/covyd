@@ -59,6 +59,7 @@ function init() {
           const n = parseInt(frequency);
           if (isNaN(n)) printError("Invalid input. Please provide a number.");
           await setup(shell, n);
+          await loadMessages();
           rl.close();
         }
       );
