@@ -1,6 +1,6 @@
 {
   "name": "covyd",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Covyd helps you prepare for COVID-19 (Coronavirus) by providing health reminders, tips & other useful guidelines right in your terminal.",
   "main": "index.js",
   "bin": {
