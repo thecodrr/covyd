@@ -25,8 +25,8 @@ function shouldSync() {
   const lastSynced = config.get("lastSynced");
   if (lastSynced) {
     var oneDayMore = new Date(lastSynced);
-    oneDayMore = tomorrow.setDate(tomorrow.getDate() + 1);
-    return oneDayMore > Date.now();
+    oneDayMore = oneDayMore.setDate(oneDayMore.getDate() + 1);
+    return Date.now() > oneDayMore;
   }
   return true;
 }
