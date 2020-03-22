@@ -43,6 +43,40 @@ You will be guided through the steps and will be up and running in no time.
 
 > To `uninstall` simply run `covyd uninstall`
 
+## Usage:
+
+### `init`:
+
+Initializes `covyd` and adds necessary configuration to your shell's `.*rc` files;
+
+```sh
+$ covyd init
+```
+
+### `uninstall`
+
+Uninstalls `covyd` from everywhere.
+
+```sh
+$ covyd uninstall
+```
+
+### `refresh`
+
+Fetch the latest messages list.
+
+```sh
+$ covyd refresh
+```
+
+### `stat`
+
+Check how many commands you have executed after installing `covyd`.
+
+```sh
+$ covyd stat
+```
+
 ## Plans:
 
 1. Add support for more shells
