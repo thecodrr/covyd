@@ -48,8 +48,7 @@ You will be guided through the steps and will be up and running in no time.
 1. Add support for more shells
 2. Add basic support for country based COVID-19 cases tracking. (_Not sure about this_)
 3. More messages
-4. Maybe seperate the message list so it can be updated independently.
-5. Desktop notifications? (_Not sure about this_)
+4. Desktop notifications? (_Not sure about this_)
 
 ## Contributing:
 
