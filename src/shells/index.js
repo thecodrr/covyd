@@ -34,7 +34,9 @@ const SHELLS = [
 function setup(shellName, frequency) {
   const shell = getShell(shellName);
   config.set("frequency", frequency);
-  config.set("shells", [...config.get("shells"), shell.name]);
+  const shells = config.get("shells");
+  if (shells.indexOf(shell.name) <= -1)
+    config.set("shells", [...shells, shell.name]);
   return shell.setup(frequency);
 }
 
