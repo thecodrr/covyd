@@ -11,7 +11,7 @@ async function printMessage() {
   const frequency = config.get("frequency");
   let count = config.get("count");
   config.set("count", ++count);
-  if (frequency === -1 || count % frequency === 0) {
+  if (frequency === -1 || count % frequency === 0 || frequency === 0) {
     await loadMessages();
     console.log(getRandomMessage());
   }
