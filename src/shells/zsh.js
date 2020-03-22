@@ -1,5 +1,7 @@
+const { openrc } = require("./utils");
+
 function setup(frequency) {
-  return openrc(function(data) {
+  return openrc(".zshrc", function(data) {
     let command = "";
     if (frequency === -1) command = "cassy";
     else command = "precmd() cassy";
