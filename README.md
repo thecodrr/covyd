@@ -5,6 +5,10 @@
 <h1 align="center">Coronavirus Assistant</h1>
 <h3 align="center">Spreading awareness about COVID-19 through your terminal</h3>
 
+<p align="center">
+    <img src="./assets/covyd.gif">
+</p>
+
 ## Features:
 
 **🌐 100% Offline:** `covyd` is 100% offline. Making it blazing fast.
