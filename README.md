@@ -61,6 +61,7 @@ You will be guided through the steps and will be up and running in no time.
 
 - `bash`
 - `zsh`
+- `fish`
 
 Help is requested from the community to add support for other terminal emulators and shells. Anyone with such experience is welcome to contribute. You do not have to contribute code, just leave a short guide on how to implement the functionality and I will handle the rest. PRs are of course welcome
 
