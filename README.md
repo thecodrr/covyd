@@ -1,12 +1,12 @@
 <p align="center">
-    <img src="./assets/logo.png" width="300">
+    <img src="https://raw.githubusercontent.com/thecodrr/covyd/master/assets/logo.png" width="300">
 </p>
 
 <h1 align="center">Coronavirus Assistant</h1>
 <h3 align="center">Spreading awareness about COVID-19 through your terminal</h3>
 
 <p align="center">
-    <img src="./assets/covyd.gif">
+    <img src="https://raw.githubusercontent.com/thecodrr/covyd/master/assets/covyd.gif">
 </p>
 
 ## Features:
