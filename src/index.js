@@ -73,5 +73,6 @@ function uninstallCovyd() {
 module.exports = {
   init,
   uninstallCovyd,
-  stat
+  stat,
+  printMessage
 };

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { init, uninstallCovyd, stat } = require("../src");
+const { init, uninstallCovyd, stat, printMessage } = require("../src");
 const { loadMessages } = require("../src/messages");
 
 async function main() {
