@@ -1,5 +1,6 @@
 const bash = require("./bash.js");
 const zsh = require("./zsh.js");
+const fish = require("./fish.js");
 const ConfigStore = require("configstore");
 const { printError, printAssistError } = require("../helpers");
 
@@ -21,6 +22,12 @@ const SHELLS = [
     aliases: ["zsh"],
     setup: zsh.setup,
     uninstall: zsh.uninstall
+  },
+  {
+    name: "Fish",
+    aliases: ["fish"],
+    setup: fish.setup,
+    uninstall: fish.uninstall
   }
 ];
 
