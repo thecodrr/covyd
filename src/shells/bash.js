@@ -1,7 +1,7 @@
 const { openrc } = require("./utils");
 
 function setup(frequency) {
-  return openrc(function(data) {
+  return openrc(".bashrc", function(data) {
     let command = "";
     if (frequency === -1) command = "covyd";
     else command = "PROMPT_COMMAND=covyd";
